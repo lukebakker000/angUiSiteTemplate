@@ -1,19 +1,5 @@
 'use strict';
 
-
-// // Declare app level module which depends on filters, and services
-// angular.module('myApp', [
-//   'ngRoute',
-//   'myApp.filters',
-//   'myApp.services',
-//   'myApp.directives',
-//   'myApp.controllers'
-// ]).
-// config(['$routeProvider', function($routeProvider) {
-//   $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-//   $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-//   $routeProvider.otherwise({redirectTo: '/view1'});
-// }]);
 angular.module('plunker', ['ui.bootstrap']);
 function AccordionDemoCtrl($scope) {
   $scope.oneAtATime = true;
@@ -40,4 +26,19 @@ function AccordionDemoCtrl($scope) {
     isFirstOpen: true,
     isFirstDisabled: false
   };
+}
+function CarouselDemoCtrl($scope) {
+  $scope.myInterval = 5000;
+  var slides = $scope.slides = [];
+  $scope.addSlide = function() {
+    var newWidth = 600 + slides.length;
+    slides.push({
+      image: 'http://placekitten.com/' + newWidth + '/300',
+      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
+        ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+    });
+  };
+  for (var i=0; i<4; i++) {
+    $scope.addSlide();
+  }
 }
