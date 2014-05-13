@@ -31,14 +31,14 @@
           </button> -->
           <a class="navbar-brand" href="#">New Skool web design &amp; development</a>
         </div>
-        <div class="collapse navbar-collapse">
+<!--         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav pull-right">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">Documents</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div> --><!--/.nav-collapse -->
       </div>
     </div>
 
@@ -60,11 +60,10 @@
   <accordion close-others="oneAtATime">
 
     <accordion-group heading="Home" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
-          <p>This is an about page. Blah blah all very interesting. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p><br />
-      <p>This is an about page. Blah blah all very interesting. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
-<!-- Carousel -->
+
+    <!-- Carousel -->
       <div ng-controller="CarouselDemoCtrl">
-        <div style="height: 305px">
+        <div>
           <carousel interval="myInterval">
             <slide ng-repeat="slide in slides" active="slide.active">
               <img ng-src="{{slide.image}}" style="margin:auto;">
@@ -75,17 +74,14 @@
             </slide>
           </carousel>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
-          </div>
-          <div class="col-md-6">
-            Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
-            <br />Enter a negative number to stop the interval.
-          </div>
-        </div>
       </div>
 <!-- Carousel end -->
+
+        <br />
+
+          <p>This is an about page. Blah blah all very interesting. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p><br />
+      <p>This is an about page. Blah blah all very interesting. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document. Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+
     </accordion-group>
 
     <accordion-group heading="Documents">
