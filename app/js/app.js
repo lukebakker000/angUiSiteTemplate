@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('plunker', ['ui.bootstrap']);
+angular.module('myApp', ['ui.bootstrap']);
 function AccordionDemoCtrl($scope) {
   $scope.oneAtATime = true;
 
@@ -42,3 +42,15 @@ function CarouselDemoCtrl($scope) {
     $scope.addSlide();
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
